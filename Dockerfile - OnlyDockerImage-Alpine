@@ -1,0 +1,7 @@
+
+# Linux Alpine with Docker Image
+FROM alpine:3.7
+
+RUN apk add --update docker openrc
+RUN rc-update add docker boot
+RUN docker --version
